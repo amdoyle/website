@@ -12,8 +12,8 @@ cover: "./opening-schene-screenshot.png"
 ---
 
 <figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/wthTmQHmuZ0" frameborder="0" allowfullscreen="true"> </iframe>
-  <figcaption class="md-figure-caption">50 Minutes to Save the World</figcaption>
+  <iframe src="https://www.youtube.com/embed/UBOtj8FdJH4" frameborder="0" allowfullscreen="true"> </iframe>
+  <figcaption class="md-figure-caption">new video</figcaption>
 </figure>
 
 The video above kept showing up in my feed for almost a week, sitting there, always in the recommended videos. But it was long, 50 minutes is a lot of dedication. I just ignored it, _"I'll do it later"_.

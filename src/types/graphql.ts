@@ -71,7 +71,7 @@ export type Directory = Node & {
   gid?: Maybe<Scalars['Int']>,
   rdev?: Maybe<Scalars['Int']>,
   blksize?: Maybe<Scalars['Int']>,
-  ino?: Maybe<Scalars['Int']>,
+  ino?: Maybe<Scalars['Float']>,
   blocks?: Maybe<Scalars['Int']>,
   atimeMs?: Maybe<Scalars['Float']>,
   mtimeMs?: Maybe<Scalars['Float']>,
@@ -323,7 +323,7 @@ export type DirectoryFilterInput = {
   gid?: Maybe<IntQueryOperatorInput>,
   rdev?: Maybe<IntQueryOperatorInput>,
   blksize?: Maybe<IntQueryOperatorInput>,
-  ino?: Maybe<IntQueryOperatorInput>,
+  ino?: Maybe<FloatQueryOperatorInput>,
   blocks?: Maybe<IntQueryOperatorInput>,
   atimeMs?: Maybe<FloatQueryOperatorInput>,
   mtimeMs?: Maybe<FloatQueryOperatorInput>,
@@ -381,7 +381,7 @@ export type File = Node & {
   gid?: Maybe<Scalars['Int']>,
   rdev?: Maybe<Scalars['Int']>,
   blksize?: Maybe<Scalars['Int']>,
-  ino?: Maybe<Scalars['Int']>,
+  ino?: Maybe<Scalars['Float']>,
   blocks?: Maybe<Scalars['Int']>,
   atimeMs?: Maybe<Scalars['Float']>,
   mtimeMs?: Maybe<Scalars['Float']>,
@@ -819,7 +819,7 @@ export type FileFilterInput = {
   gid?: Maybe<IntQueryOperatorInput>,
   rdev?: Maybe<IntQueryOperatorInput>,
   blksize?: Maybe<IntQueryOperatorInput>,
-  ino?: Maybe<IntQueryOperatorInput>,
+  ino?: Maybe<FloatQueryOperatorInput>,
   blocks?: Maybe<IntQueryOperatorInput>,
   atimeMs?: Maybe<FloatQueryOperatorInput>,
   mtimeMs?: Maybe<FloatQueryOperatorInput>,
@@ -1832,7 +1832,7 @@ export type QueryFileArgs = {
   gid?: Maybe<IntQueryOperatorInput>,
   rdev?: Maybe<IntQueryOperatorInput>,
   blksize?: Maybe<IntQueryOperatorInput>,
-  ino?: Maybe<IntQueryOperatorInput>,
+  ino?: Maybe<FloatQueryOperatorInput>,
   blocks?: Maybe<IntQueryOperatorInput>,
   atimeMs?: Maybe<FloatQueryOperatorInput>,
   mtimeMs?: Maybe<FloatQueryOperatorInput>,
@@ -2008,7 +2008,7 @@ export type QueryDirectoryArgs = {
   gid?: Maybe<IntQueryOperatorInput>,
   rdev?: Maybe<IntQueryOperatorInput>,
   blksize?: Maybe<IntQueryOperatorInput>,
-  ino?: Maybe<IntQueryOperatorInput>,
+  ino?: Maybe<FloatQueryOperatorInput>,
   blocks?: Maybe<IntQueryOperatorInput>,
   atimeMs?: Maybe<FloatQueryOperatorInput>,
   mtimeMs?: Maybe<FloatQueryOperatorInput>,
@@ -2181,10 +2181,10 @@ export type SiteFieldsEnum =
   'siteMetadata___author___username' |
   'siteMetadata___author___social___email' |
   'siteMetadata___author___social___github' |
-  'siteMetadata___author___social___goodreads' |
-  'siteMetadata___author___social___instagram' |
   'siteMetadata___author___social___linkedin' |
   'siteMetadata___author___social___medium' |
+  'siteMetadata___author___social___instagram' |
+  'siteMetadata___author___social___goodreads' |
   'siteMetadata___author___social___twitter' |
   'port' |
   'host' |
@@ -2964,20 +2964,20 @@ export type SiteSiteMetadataAuthorFilterInput = {
 export type SiteSiteMetadataAuthorSocial = {
   email?: Maybe<Scalars['String']>,
   github?: Maybe<Scalars['String']>,
-  goodreads?: Maybe<Scalars['String']>,
-  instagram?: Maybe<Scalars['String']>,
   linkedin?: Maybe<Scalars['String']>,
   medium?: Maybe<Scalars['String']>,
+  instagram?: Maybe<Scalars['String']>,
+  goodreads?: Maybe<Scalars['String']>,
   twitter?: Maybe<Scalars['String']>,
 };
 
 export type SiteSiteMetadataAuthorSocialFilterInput = {
   email?: Maybe<StringQueryOperatorInput>,
   github?: Maybe<StringQueryOperatorInput>,
-  goodreads?: Maybe<StringQueryOperatorInput>,
-  instagram?: Maybe<StringQueryOperatorInput>,
   linkedin?: Maybe<StringQueryOperatorInput>,
   medium?: Maybe<StringQueryOperatorInput>,
+  instagram?: Maybe<StringQueryOperatorInput>,
+  goodreads?: Maybe<StringQueryOperatorInput>,
   twitter?: Maybe<StringQueryOperatorInput>,
 };
 
@@ -3029,7 +3029,7 @@ export type AvatarQuery = { file: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<
 export type SiteMetaDataQueryVariables = {};
 
 
-export type SiteMetaDataQuery = { site: Maybe<{ siteMetadata: Maybe<(Pick<SiteSiteMetadata, 'description' | 'siteUrl' | 'title' | 'copyright'> & { author: Maybe<(Pick<SiteSiteMetadataAuthor, 'birthDate' | 'firstname' | 'lastname' | 'name' | 'title' | 'resume' | 'username'> & { descriptions: Maybe<Pick<SiteSiteMetadataAuthorDescriptions, 'intro'>>, assets: Maybe<Pick<SiteSiteMetadataAuthorAssets, 'icon' | 'photo'>>, social: Maybe<Pick<SiteSiteMetadataAuthorSocial, 'email' | 'medium' | 'twitter' | 'github' | 'goodreads' | 'linkedin' | 'instagram'>> })> })> }> };
+export type SiteMetaDataQuery = { site: Maybe<{ siteMetadata: Maybe<(Pick<SiteSiteMetadata, 'description' | 'siteUrl' | 'title' | 'copyright'> & { author: Maybe<(Pick<SiteSiteMetadataAuthor, 'birthDate' | 'firstname' | 'lastname' | 'name' | 'title' | 'resume' | 'username'> & { descriptions: Maybe<Pick<SiteSiteMetadataAuthorDescriptions, 'intro'>>, assets: Maybe<Pick<SiteSiteMetadataAuthorAssets, 'icon' | 'photo'>>, social: Maybe<Pick<SiteSiteMetadataAuthorSocial, 'email' | 'github' | 'linkedin'>> })> })> }> };
 
 export type Unnamed_2_QueryVariables = {};
 
