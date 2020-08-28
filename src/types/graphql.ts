@@ -611,7 +611,42 @@ export type FileFieldsEnum =
   'childMarkdownRemark___frontmatter___featured' |
   'childMarkdownRemark___frontmatter___date' |
   'childMarkdownRemark___frontmatter___description' |
-  'childMarkdownRemark___frontmatter___cover' |
+  'childMarkdownRemark___frontmatter___cover___birthtime' |
+  'childMarkdownRemark___frontmatter___cover___birthtimeMs' |
+  'childMarkdownRemark___frontmatter___cover___sourceInstanceName' |
+  'childMarkdownRemark___frontmatter___cover___absolutePath' |
+  'childMarkdownRemark___frontmatter___cover___relativePath' |
+  'childMarkdownRemark___frontmatter___cover___extension' |
+  'childMarkdownRemark___frontmatter___cover___size' |
+  'childMarkdownRemark___frontmatter___cover___prettySize' |
+  'childMarkdownRemark___frontmatter___cover___modifiedTime' |
+  'childMarkdownRemark___frontmatter___cover___accessTime' |
+  'childMarkdownRemark___frontmatter___cover___changeTime' |
+  'childMarkdownRemark___frontmatter___cover___birthTime' |
+  'childMarkdownRemark___frontmatter___cover___root' |
+  'childMarkdownRemark___frontmatter___cover___dir' |
+  'childMarkdownRemark___frontmatter___cover___base' |
+  'childMarkdownRemark___frontmatter___cover___ext' |
+  'childMarkdownRemark___frontmatter___cover___name' |
+  'childMarkdownRemark___frontmatter___cover___relativeDirectory' |
+  'childMarkdownRemark___frontmatter___cover___dev' |
+  'childMarkdownRemark___frontmatter___cover___mode' |
+  'childMarkdownRemark___frontmatter___cover___nlink' |
+  'childMarkdownRemark___frontmatter___cover___uid' |
+  'childMarkdownRemark___frontmatter___cover___gid' |
+  'childMarkdownRemark___frontmatter___cover___rdev' |
+  'childMarkdownRemark___frontmatter___cover___blksize' |
+  'childMarkdownRemark___frontmatter___cover___ino' |
+  'childMarkdownRemark___frontmatter___cover___blocks' |
+  'childMarkdownRemark___frontmatter___cover___atimeMs' |
+  'childMarkdownRemark___frontmatter___cover___mtimeMs' |
+  'childMarkdownRemark___frontmatter___cover___ctimeMs' |
+  'childMarkdownRemark___frontmatter___cover___atime' |
+  'childMarkdownRemark___frontmatter___cover___mtime' |
+  'childMarkdownRemark___frontmatter___cover___ctime' |
+  'childMarkdownRemark___frontmatter___cover___publicURL' |
+  'childMarkdownRemark___frontmatter___cover___id' |
+  'childMarkdownRemark___frontmatter___cover___children' |
   'childMarkdownRemark___frontmatter___category' |
   'childMarkdownRemark___frontmatter___tags' |
   'childMarkdownRemark___excerpt' |
@@ -1458,7 +1493,67 @@ export type MarkdownRemarkFieldsEnum =
   'frontmatter___featured' |
   'frontmatter___date' |
   'frontmatter___description' |
-  'frontmatter___cover' |
+  'frontmatter___cover___birthtime' |
+  'frontmatter___cover___birthtimeMs' |
+  'frontmatter___cover___sourceInstanceName' |
+  'frontmatter___cover___absolutePath' |
+  'frontmatter___cover___relativePath' |
+  'frontmatter___cover___extension' |
+  'frontmatter___cover___size' |
+  'frontmatter___cover___prettySize' |
+  'frontmatter___cover___modifiedTime' |
+  'frontmatter___cover___accessTime' |
+  'frontmatter___cover___changeTime' |
+  'frontmatter___cover___birthTime' |
+  'frontmatter___cover___root' |
+  'frontmatter___cover___dir' |
+  'frontmatter___cover___base' |
+  'frontmatter___cover___ext' |
+  'frontmatter___cover___name' |
+  'frontmatter___cover___relativeDirectory' |
+  'frontmatter___cover___dev' |
+  'frontmatter___cover___mode' |
+  'frontmatter___cover___nlink' |
+  'frontmatter___cover___uid' |
+  'frontmatter___cover___gid' |
+  'frontmatter___cover___rdev' |
+  'frontmatter___cover___blksize' |
+  'frontmatter___cover___ino' |
+  'frontmatter___cover___blocks' |
+  'frontmatter___cover___atimeMs' |
+  'frontmatter___cover___mtimeMs' |
+  'frontmatter___cover___ctimeMs' |
+  'frontmatter___cover___atime' |
+  'frontmatter___cover___mtime' |
+  'frontmatter___cover___ctime' |
+  'frontmatter___cover___publicURL' |
+  'frontmatter___cover___id' |
+  'frontmatter___cover___parent___id' |
+  'frontmatter___cover___parent___children' |
+  'frontmatter___cover___children' |
+  'frontmatter___cover___children___id' |
+  'frontmatter___cover___children___children' |
+  'frontmatter___cover___internal___content' |
+  'frontmatter___cover___internal___contentDigest' |
+  'frontmatter___cover___internal___description' |
+  'frontmatter___cover___internal___fieldOwners' |
+  'frontmatter___cover___internal___ignoreType' |
+  'frontmatter___cover___internal___mediaType' |
+  'frontmatter___cover___internal___owner' |
+  'frontmatter___cover___internal___type' |
+  'frontmatter___cover___childMarkdownRemark___id' |
+  'frontmatter___cover___childMarkdownRemark___excerpt' |
+  'frontmatter___cover___childMarkdownRemark___rawMarkdownBody' |
+  'frontmatter___cover___childMarkdownRemark___fileAbsolutePath' |
+  'frontmatter___cover___childMarkdownRemark___html' |
+  'frontmatter___cover___childMarkdownRemark___htmlAst' |
+  'frontmatter___cover___childMarkdownRemark___excerptAst' |
+  'frontmatter___cover___childMarkdownRemark___headings' |
+  'frontmatter___cover___childMarkdownRemark___timeToRead' |
+  'frontmatter___cover___childMarkdownRemark___tableOfContents' |
+  'frontmatter___cover___childMarkdownRemark___children' |
+  'frontmatter___cover___childImageSharp___id' |
+  'frontmatter___cover___childImageSharp___children' |
   'frontmatter___category' |
   'frontmatter___tags' |
   'excerpt' |
@@ -1593,7 +1688,7 @@ export type MarkdownRemarkFrontmatter = {
   featured?: Maybe<Scalars['Boolean']>,
   date?: Maybe<Scalars['Date']>,
   description?: Maybe<Scalars['String']>,
-  cover?: Maybe<Scalars['String']>,
+  cover?: Maybe<File>,
   category?: Maybe<Scalars['String']>,
   tags?: Maybe<Array<Maybe<Scalars['String']>>>,
 };
@@ -1614,7 +1709,7 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   featured?: Maybe<BooleanQueryOperatorInput>,
   date?: Maybe<DateQueryOperatorInput>,
   description?: Maybe<StringQueryOperatorInput>,
-  cover?: Maybe<StringQueryOperatorInput>,
+  cover?: Maybe<FileFilterInput>,
   category?: Maybe<StringQueryOperatorInput>,
   tags?: Maybe<StringQueryOperatorInput>,
 };
@@ -2924,7 +3019,7 @@ export type LatestPostsQueryVariables = {};
 
 export type LatestPostsQuery = { allMarkdownRemark: { edges: Array<{ node: ShowcasedPostInformationFragment }> } };
 
-export type ShowcasedPostInformationFragment = (Pick<MarkdownRemark, 'excerpt' | 'timeToRead'> & { fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'date' | 'title' | 'featured' | 'description' | 'cover'>> });
+export type ShowcasedPostInformationFragment = (Pick<MarkdownRemark, 'excerpt' | 'timeToRead'> & { fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter: Maybe<(Pick<MarkdownRemarkFrontmatter, 'date' | 'title' | 'featured' | 'description'> & { cover: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<GatsbyImageSharpFixedFragment> }> }> })> });
 
 export type AvatarQueryVariables = {};
 
@@ -2946,7 +3041,7 @@ export type BlogPostBySlugQueryVariables = {
 };
 
 
-export type BlogPostBySlugQuery = { markdownRemark: Maybe<(Pick<MarkdownRemark, 'id' | 'excerpt' | 'html' | 'timeToRead'> & { frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'date' | 'cover' | 'slug' | 'description' | 'category' | 'tags'>> })> };
+export type BlogPostBySlugQuery = { markdownRemark: Maybe<(Pick<MarkdownRemark, 'id' | 'excerpt' | 'html' | 'timeToRead'> & { frontmatter: Maybe<(Pick<MarkdownRemarkFrontmatter, 'title' | 'date' | 'slug' | 'description' | 'category' | 'tags'> & { cover: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<Pick<ImageSharpFixed, 'src'>> }> }> })> })> };
 
 export type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
