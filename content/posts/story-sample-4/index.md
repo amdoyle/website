@@ -7,7 +7,7 @@ featured: false
 date: "2020-10-10T15:00:00.000Z"
 description: >-
   Blablabla
-cover: "./story-sample-r-cover.jpeg"
+cover: "./story-sample-4-cover.jpeg"
 category: Test
 tags:
   - Test
