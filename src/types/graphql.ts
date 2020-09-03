@@ -2182,10 +2182,6 @@ export type SiteFieldsEnum =
   'siteMetadata___author___social___email' |
   'siteMetadata___author___social___github' |
   'siteMetadata___author___social___linkedin' |
-  'siteMetadata___author___social___medium' |
-  'siteMetadata___author___social___instagram' |
-  'siteMetadata___author___social___goodreads' |
-  'siteMetadata___author___social___twitter' |
   'port' |
   'host' |
   'polyfill' |
@@ -2491,7 +2487,6 @@ export type SitePageFieldsEnum =
   'pluginCreator___packageJson___description' |
   'pluginCreator___packageJson___version' |
   'pluginCreator___packageJson___main' |
-  'pluginCreator___packageJson___author' |
   'pluginCreator___packageJson___license' |
   'pluginCreator___packageJson___dependencies' |
   'pluginCreator___packageJson___dependencies___name' |
@@ -2706,7 +2701,6 @@ export type SitePluginFieldsEnum =
   'packageJson___description' |
   'packageJson___version' |
   'packageJson___main' |
-  'packageJson___author' |
   'packageJson___license' |
   'packageJson___dependencies' |
   'packageJson___dependencies___name' |
@@ -2749,7 +2743,6 @@ export type SitePluginPackageJson = {
   description?: Maybe<Scalars['String']>,
   version?: Maybe<Scalars['String']>,
   main?: Maybe<Scalars['String']>,
-  author?: Maybe<Scalars['String']>,
   license?: Maybe<Scalars['String']>,
   dependencies?: Maybe<Array<Maybe<SitePluginPackageJsonDependencies>>>,
   devDependencies?: Maybe<Array<Maybe<SitePluginPackageJsonDevDependencies>>>,
@@ -2790,7 +2783,6 @@ export type SitePluginPackageJsonFilterInput = {
   description?: Maybe<StringQueryOperatorInput>,
   version?: Maybe<StringQueryOperatorInput>,
   main?: Maybe<StringQueryOperatorInput>,
-  author?: Maybe<StringQueryOperatorInput>,
   license?: Maybe<StringQueryOperatorInput>,
   dependencies?: Maybe<SitePluginPackageJsonDependenciesFilterListInput>,
   devDependencies?: Maybe<SitePluginPackageJsonDevDependenciesFilterListInput>,
@@ -2965,20 +2957,12 @@ export type SiteSiteMetadataAuthorSocial = {
   email?: Maybe<Scalars['String']>,
   github?: Maybe<Scalars['String']>,
   linkedin?: Maybe<Scalars['String']>,
-  medium?: Maybe<Scalars['String']>,
-  instagram?: Maybe<Scalars['String']>,
-  goodreads?: Maybe<Scalars['String']>,
-  twitter?: Maybe<Scalars['String']>,
 };
 
 export type SiteSiteMetadataAuthorSocialFilterInput = {
   email?: Maybe<StringQueryOperatorInput>,
   github?: Maybe<StringQueryOperatorInput>,
   linkedin?: Maybe<StringQueryOperatorInput>,
-  medium?: Maybe<StringQueryOperatorInput>,
-  instagram?: Maybe<StringQueryOperatorInput>,
-  goodreads?: Maybe<StringQueryOperatorInput>,
-  twitter?: Maybe<StringQueryOperatorInput>,
 };
 
 export type SiteSiteMetadataFilterInput = {
@@ -3029,7 +3013,7 @@ export type AvatarQuery = { file: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<
 export type SiteMetaDataQueryVariables = {};
 
 
-export type SiteMetaDataQuery = { site: Maybe<{ siteMetadata: Maybe<(Pick<SiteSiteMetadata, 'description' | 'siteUrl' | 'title' | 'copyright'> & { author: Maybe<(Pick<SiteSiteMetadataAuthor, 'birthDate' | 'firstname' | 'lastname' | 'name' | 'title' | 'resume' | 'username'> & { descriptions: Maybe<Pick<SiteSiteMetadataAuthorDescriptions, 'intro'>>, assets: Maybe<Pick<SiteSiteMetadataAuthorAssets, 'icon' | 'photo'>>, social: Maybe<Pick<SiteSiteMetadataAuthorSocial, 'email' | 'github' | 'linkedin' | 'twitter'>> })> })> }> };
+export type SiteMetaDataQuery = { site: Maybe<{ siteMetadata: Maybe<(Pick<SiteSiteMetadata, 'description' | 'siteUrl' | 'title' | 'copyright'> & { author: Maybe<(Pick<SiteSiteMetadataAuthor, 'birthDate' | 'firstname' | 'lastname' | 'name' | 'title' | 'resume' | 'username'> & { descriptions: Maybe<Pick<SiteSiteMetadataAuthorDescriptions, 'intro'>>, assets: Maybe<Pick<SiteSiteMetadataAuthorAssets, 'icon' | 'photo'>>, social: Maybe<Pick<SiteSiteMetadataAuthorSocial, 'email' | 'github' | 'linkedin'>> })> })> }> };
 
 export type Unnamed_2_QueryVariables = {};
 
