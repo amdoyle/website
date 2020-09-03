@@ -37,11 +37,6 @@ const Header: React.FunctionComponent<HeaderProps> = ({
             }
             state={{ prevPath: location.pathname }}
           >
-            {showBackNav ? (
-              <FaArrowLeft />
-            ) : (
-              author.social.twitter.toLowerCase()
-            )}
           </Link>
         </Title>
         <StyledNav>
@@ -91,7 +86,6 @@ const Title = styled.h2`
   ${scale(0.25)};
 
   a {
-    color: inherit;
     text-decoration: none;
     box-shadow: none;
     display: flex;
@@ -106,6 +100,8 @@ const Title = styled.h2`
 const StyledNav = styled.nav``;
 
 const StyledLink = styled(Link)`
+  color: ${({ theme }) => theme.colors.accent};
+  text-shadow: none;
   margin-right: ${rhythm(1 / 2)};
 `;
 
