@@ -26,7 +26,6 @@ const useSiteMetadata = (): SiteSiteMetadata => {
                 email
                 github
                 linkedin
-                twitter
               }
             }
             description
