@@ -20,6 +20,9 @@ export const device = {
 };
 
 export const colors = {
-  lightGray: "#E6E6E9",
-  accent: "#ff483b",
+  pink: "#DE0D92",
+  lightGray: "#41494c",
+  darkGray: "#2c3539",
+  accent: "#DE0D92",
+  white: '#FCFAF9'
 };

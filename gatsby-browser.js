@@ -1,4 +1,4 @@
 exports.onInitialClientRender = () => {
-  require("typeface-arvo");
-  require("typeface-cabin");
+  require("typeface-open-sans");
+  require("typeface-montserrat");
 };

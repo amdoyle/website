@@ -1,9 +1,9 @@
 {
-  "name": "robertistok-personal-website",
+  "name": "amdoyle-personal-website",
   "private": true,
   "description": "My personal website",
   "version": "0.1.0",
-  "author": "Robert Istok <robertistok94@gmail.com>",
+  "author": "Ann Marie Doyle",
   "dependencies": {
     "@typescript-eslint/parser": "^2.3.3",
     "babel-plugin-styled-components": "^1.10.6",
@@ -39,8 +39,8 @@
     "react-spring": "^8.0.27",
     "react-typography": "^0.16.19",
     "styled-components": "^4.3.2",
-    "typeface-arvo": "^0.0.72",
-    "typeface-cabin": "^0.0.72",
+    "typeface-montserrat": "0.0.75",
+    "typeface-open-sans": "0.0.75",
     "typography": "^0.16.19",
     "typography-theme-doelger": "^0.16.19"
   },
@@ -64,7 +64,7 @@
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.3"
   },
-  "homepage": "https://robertistok.com",
+  "homepage": "https://competent-sinoussi-34aa96.netlify.app/",
   "keywords": [
     "adoyle"
   ],
@@ -72,7 +72,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robertistok/personal-website"
+    "url": "git+https://https://github.com/amdoyle/website"
   },
   "scripts": {
     "build": "gatsby build",
